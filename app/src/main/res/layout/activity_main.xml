@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.michaeldavidsim.swapi_android_demo.MainActivity"
+>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/splash_background"
+        android:contentDescription="@string/stars_background_image" />
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:layout_marginTop="100dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/star_wars_logo"
+        android:src="@drawable/star_wars_logo"
+        />
+
+        <Button
+            android:id="@+id/cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/open"
+            android:background="@color/main_yellow"
+            android:layout_marginTop="230dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="150dp"
+            />
+    </LinearLayout>
+</RelativeLayout>
